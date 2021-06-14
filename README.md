@@ -1,14 +1,6 @@
-# Project
+# About this repository
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
-
-As the maintainer of this project, please make a few updates:
-
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+This repository holds assets that support the Azure Percept private preview dev kit. The private preview dev kit is an early version of the Azure Percept DK that was distributed to members of the Azure Percept (or Project Santa Cruz) Private Preview Program. Although the program is now closed, those with a private preview dev kit 
 
 ## Contributing
 
