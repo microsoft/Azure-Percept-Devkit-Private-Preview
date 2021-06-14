@@ -1,0 +1,26 @@
+root@scz-devkit [ ~ ]# chmod +x ./scz-tool-wifisoftap-accessinfo.devkit.sh
+
+root@scz-devkit [ ~ ]# ./scz-tool-wifisoftap-getinfo.devkit.sh
+SCZ Tool - Print Wifi-SoftAP Access Info - Usage
+Version: 1.0.201112.1001
+[Usage] scz-tool-wifisoftap-accessinfo.devkit.sh [-m|--model=<model_name>] [-h|--help]
+
+root@scz-devkit [ ~ ]# ./scz-tool-wifisoftap-accessinfo.devkit.sh --help
+SCZ Tool - Print Wifi-SoftAP Access Info - Help
+Version: 1.0.201112.1001
+[Usage] scz-tool-wifisoftap-accessinfo.devkit.sh [OPTION...]
+
+Manufacturing featured options:
+  -m, --model=<model_name>        (Required) Name of supported models: pe100 pe101 .
+Other options:
+  -h, --help           Apply this option solely to show help messages.
+
+[Example]
+- To print Wifi SoftAP access info:
+  > ./scz-tool-wifisoftap-accessinfo.devkit.sh -m=pe101
+
+root@scz-devkit [ ~ ]# ./scz-tool-wifisoftap-accessinfo.devkit.sh -m=pe101 ; echo rc=$?
+  Wifi-SoftAP MAC Address: 0a0b01020304
+  Wifi-SoftAP SSID: scz-0304
+  Wifi-SoftAP Pre-Shared Key: sdf234wh
+rc=0

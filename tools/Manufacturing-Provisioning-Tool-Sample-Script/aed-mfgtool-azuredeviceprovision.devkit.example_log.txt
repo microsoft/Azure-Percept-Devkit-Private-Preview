@@ -1,0 +1,136 @@
+root@scz-devkit [ ~ ]# chmod +x ./aed-mfgtool-azuredeviceprovision.devkit.sh
+
+root@scz-devkit [ ~ ]# ./aed-mfgtool-azuredeviceprovision.devkit.sh
+AED Manufacturing Tool - Provisioning Tool Sample - Usage
+Version: 1.0.201112.1001
+[Usage] aed-mfgtool-azuredeviceprovision.devkit.sh [-m|--model=<model_name>] [-n|--serialnum=<serial_number>] [--inittpm]
+           [-h|--help] [-f|--file=<output_filename>] [-c|--checkrequired] [-o|--overridesn] [-q|--query]
+
+root@scz-devkit [ ~ ]# ./aed-mfgtool-azuredeviceprovision.devkit.sh --help
+AED Manufacturing Tool - Provisioning Tool Sample - Help
+Version: 1.0.201112.1001
+[Usage] aed-mfgtool-azuredeviceprovision.devkit.sh [OPTION...]
+
+Manufacturing featured options:
+  -m, --model=<model_name>        (Required) Name of supported models: pe100 pe101 .
+  -n, --serialnum=<serial_number> (Optional) Given serial number to be compared with what've read from hardware.
+  -o, --overridesn                (Optional) Override device record with given serial number instead of serial number read from hardware.
+  -f, --file=<output_filename>    (Optional) Redirect device record output from standard output to a file at /tmp.
+  --inittpm                       (Optional) Clear TPM before to provision TPM.
+Other options:
+  -h, --help           Apply this option solely to show help messages.
+  -c, --checkrequired  Apply this option with "-m=<model_name>" to run system requirement check and then exit.
+  -q, --query          Apply this option with "-m=<model_name>" to run this tool in query mode (dry-run) without re-provisioning TPM.
+
+[Example]
+- To run provisioning and check serialnumber on pe101 device:
+  > ./aed-mfgtool-azuredeviceprovision.devkit.sh -m=pe101 -n=11111101111110011000 ; echo rc=$?
+
+- To run provisioning with clearing TPM and also check serialnumber on pe101 device:
+  > ./aed-mfgtool-azuredeviceprovision.devkit.sh -m=pe101 -n=11111101111110011000 --inittpm ; echo rc=$?
+
+- To run provisioning without check serialnumber on pe101 device:
+  > ./aed-mfgtool-azuredeviceprovision.devkit.sh -m=pe101 ; echo rc=$?
+
+- To run without re-provisioning TPM (query only):
+  > ./aed-mfgtool-azuredeviceprovision.devkit.sh -m=pe101 -q ; echo rc=$?
+
+- To check system requirement on pe101 device:
+  > ./aed-mfgtool-azuredeviceprovision.devkit.sh -m=pe101 -c ; echo rc=$?
+
+root@scz-devkit [ ~ ]# ./aed-mfgtool-azuredeviceprovision.devkit.sh -m=pe101 -c; echo rc=$?
+Check system requirement for model pe101 ...
+Passed!
+rc=0
+
+root@scz-devkit [ ~ ]# ./aed-mfgtool-azuredeviceprovision.devkit.sh -m=pe101 -q; echo rc=$?
+ERROR: init_tpm (rc=1) no EK found! please run without -q option to re-provision TPM!
+rc=1
+
+root@scz-devkit [ ~ ]# ./aed-mfgtool-azuredeviceprovision.devkit.sh -m=pe101 -n=11111101111110011000 --inittpm; echo rc=$?
+INFO: TPM will be cleared with provisioning.
+INFO: TPM cleared!
+INFO: EK created!
+{
+  "SerialNumber": "11111101111110011000",
+  "LAN0MAC": "01:02:03:04:05:06",
+  "TPM_EkPub": "AToAA...JznbfyQ==",
+  "TPM_EkPub_Digest": "b5dk...baq",
+  "WifiDPP_EccPub": "MFkw...piog==",
+  "Wifi_MAC": "0A:0B:03:04:05:06",
+  "Wifi-SoftAP_PSK": "sdf234wh"
+}
+rc=0
+
+root@scz-devkit [ ~ ]# ./aed-mfgtool-azuredeviceprovision.devkit.sh -m=pe101 -n=11111101111110011000; echo rc=$?
+INFO: TPM provisioning will be run without clearing TPM.
+INFO: EK existed!
+{
+  "SerialNumber": "11111101111110011000",
+  "LAN0MAC": "01:02:03:04:05:06",
+  "TPM_EkPub": "AToAA...JznbfyQ==",
+  "TPM_EkPub_Digest": "b5dk...baq",
+  "WifiDPP_EccPub": "MFkw...piog==",
+  "Wifi_MAC": "0A:0B:03:04:05:06",
+  "Wifi-SoftAP_PSK": "sdf234wh"
+}
+rc=0
+
+root@scz-devkit [ ~ ]# ./aed-mfgtool-azuredeviceprovision.devkit.sh -m=pe101 -n=11111101111110011000 -f=device.json; echo rc=$?
+INFO: TPM provisioning will be run without clearing TPM.
+INFO: EK existed!
+Find output at /tmp/device.json
+rc=0
+
+root@scz-devkit [ ~ ]# cat /tmp/device.json
+{
+  "SerialNumber": "11111101111110011000",
+  "LAN0MAC": "01:02:03:04:05:06",
+  "TPM_EkPub": "AToAA...JznbfyQ==",
+  "TPM_EkPub_Digest": "b5dk...baq",
+  "WifiDPP_EccPub": "MFkw...piog==",
+  "Wifi_MAC": "0A:0B:03:04:05:06",
+  "Wifi-SoftAP_PSK": "sdf234wh"
+}
+
+root@scz-devkit [ ~ ]# ./aed-mfgtool-azuredeviceprovision.devkit.sh -m=pe101 ; echo rc=$?
+INFO: TPM provisioning will be run without clearing TPM.
+INFO: EK existed!
+{
+  "SerialNumber": "11111101111110011000",
+  "LAN0MAC": "01:02:03:04:05:06",
+  "TPM_EkPub": "AToAA...JznbfyQ==",
+  "TPM_EkPub_Digest": "b5dk...baq",
+  "WifiDPP_EccPub": "MFkw...piog==",
+  "Wifi_MAC": "0A:0B:03:04:05:06",
+  "Wifi-SoftAP_PSK": "sdf234wh"
+}
+rc=0
+
+root@scz-devkit [ ~ ]# ./aed-mfgtool-azuredeviceprovision.devkit.sh -m=pe101 -q ; echo rc=$?
+{
+  "SerialNumber": "11111101111110011000",
+  "LAN0MAC": "01:02:03:04:05:06",
+  "TPM_EkPub": "AToAA...JznbfyQ==",
+  "TPM_EkPub_Digest": "b5dk...baq",
+  "WifiDPP_EccPub": "MFkw...piog==",
+  "Wifi_MAC": "0A:0B:03:04:05:06",
+  "Wifi-SoftAP_PSK": "sdf234wh"
+}
+rc=0
+
+root@scz-devkit [ ~ ]# ./aed-mfgtool-azuredeviceprovision.devkit.sh -m=pe101 -n=A123; echo rc=$?
+ERROR: get_serial_number (rc=1) serial number does not match! input(A123) != hw (11111101111110011000)
+rc=1
+
+root@scz-devkit [ ~ ]# ./aed-mfgtool-azuredeviceprovision.devkit.sh -m=pe101 -n=A123 -o -q ; echo rc=$?
+{
+  "SerialNumber": "A123",
+  "LAN0MAC": "01:02:03:04:05:06",
+  "TPM_EkPub": "AToAA...JznbfyQ==",
+  "TPM_EkPub_Digest": "b5dk...baq",
+  "WifiDPP_EccPub": "MFkw...piog==",
+  "Wifi_MAC": "0A:0B:03:04:05:06",
+  "Wifi-SoftAP_PSK": "sdf234wh"
+}
+rc=0
