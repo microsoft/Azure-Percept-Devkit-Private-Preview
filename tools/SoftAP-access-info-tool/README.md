@@ -1,12 +1,12 @@
 # Collect your device’s TPM-derived SoftAP password
 
-The [SoftAP Tool](https://github.com/microsoft/Project-Santa-Cruz-Preview/blob/main/tools/SoftAP-access-info-tool/scz-tool-wifisoftap-accessinfo.devkit.sh) allows you to access your Project Santa Cruz AI Perception Devkit’s TPM-derived SoftAP password and print it to the console.
+The SoftAP Tool allows you to access your Project Santa Cruz AI Perception Devkit’s TPM-derived SoftAP password and print it to the console.
 
 New devices built and shipped after 11/17/2020 will contain a Welcome card with your unique SoftAP password printed on a sticker. It is highly recommended that you keep this sticker so you can refer to it when needed. If you do not have a sticker or it was misplaced, you will need to complete the following tasks to retrieve your TPM-derived password from the device.
 
 ### What is SoftAP?
 
-SoftAP, or software-enabled access point, allows your device to act as a wireless access point/hotspot through its integrated Wi-Fi module. By connecting to your device's SoftAP hotspot, you can set your device settings through the [OOBE](https://github.com/microsoft/Project-Santa-Cruz-Preview/blob/main/user-guides/getting_started/oobe.md) or [SSH into your device](https://github.com/microsoft/Project-Santa-Cruz-Preview/blob/main/user-guides/general/troubleshooting/ssh_and_serial_connection_setup.md) for [troubleshooting](https://github.com/microsoft/Project-Santa-Cruz-Preview/blob/main/user-guides/general/troubleshooting/general_devkit_troubleshooting.md) and [USB updates](https://github.com/microsoft/Project-Santa-Cruz-Preview/blob/main/user-guides/updating/usb_updating.md), even if your device is not yet connected to your home or office network over Wi-Fi or Ethernet.
+SoftAP, or software-enabled access point, allows your device to act as a wireless access point/hotspot through its integrated Wi-Fi module. By connecting to your device's SoftAP hotspot, you can set your device settings through the [onboarding exerience](https://docs.microsoft.com/en-us/azure/azure-percept/quickstart-percept-dk-set-up) or [SSH into your device](https://docs.microsoft.com/en-us/azure/azure-percept/how-to-ssh-into-percept-dk) for [troubleshooting](https://docs.microsoft.com/en-us/azure/azure-percept/troubleshoot-dev-kit) and [USB updates](https://docs.microsoft.com/en-us/azure/azure-percept/how-to-update-via-usb), even if your device is not yet connected to your home or office network over Wi-Fi or Ethernet.
 
 ## Prerequisites
 
