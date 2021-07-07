@@ -23,7 +23,7 @@ SoftAP, or software-enabled access point, allows your device to act as a wireles
 1. In the PuTTY terminal, enter the following command to download the SoftAP Tool directly to your devkit:
 
     ```bash
-    wget https://raw.githubusercontent.com/microsoft/Project-Santa-Cruz-Preview/main/tools/SoftAP-access-info-tool/scz-tool-wifisoftap-accessinfo.devkit.sh
+    wget https://raw.githubusercontent.com/microsoft/Azure-Percept-Devkit-Private-Preview/main/tools/SoftAP-access-info-tool/scz-tool-wifisoftap-accessinfo.devkit.sh
     ```
 
 1. Once you have downloaded the file, change the permissions of the file to allow execution:  
