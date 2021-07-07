@@ -18,7 +18,7 @@ SoftAP, or software-enabled access point, allows your device to act as a wireles
 
 1. Power on your device.
 
-1. Open PuTTY and [SSH into your device](https://github.com/microsoft/Project-Santa-Cruz-Preview/blob/main/user-guides/general/troubleshooting/ssh_and_serial_connection_setup.md).
+1. Open PuTTY and [SSH into your device](https://docs.microsoft.com/en-us/azure/azure-percept/how-to-ssh-into-percept-dk).
 
 1. In the PuTTY terminal, enter the following command to download the SoftAP Tool directly to your devkit:
 
