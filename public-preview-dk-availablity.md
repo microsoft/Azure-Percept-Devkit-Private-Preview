@@ -1,24 +1,44 @@
 # Azure Percept DK and Azure Percept Audio Availability
 
-Thank you for your interest in Azure Percept DK and Azure Percept Audio. At this time they are available for purchase in a limited number of countries. Refer to the below table for more details.
+Thank you for your interest in Azure Percept DK and Azure Percept Audio. The Azure Percept Devkit can be purchased in the following countries:
 
 |Country            |Availability Status    |More Information        |
 |:------------------|:----------------------|:-----------------------|
-|United States      |available for pre-order|[order now](https://go.microsoft.com/fwlink/?linkid=2155270) |
-|Canada             |waitlist availability  |[order now](https://go.microsoft.com/fwlink/?linkid=2155270) |
-|France             |waitlist availability  |[join the waitlist](https://www.microsoft.com/emwa/signup_2/fr-fr?BGID=ProductA) |
-|Germany            |waitlist availability  |[join the waitlist](https://www.microsoft.com/emwa/signup_2/de-de?BGID=ProductA) |
-|Netherlands        |waitlist availability  |[join the waitlist](https://www.microsoft.com/emwa/signup_2/nl-nl?BGID=ProductA) |
-|Sweden             |waitlist availability  |[join the waitlist](https://www.microsoft.com/emwa/signup_2/sv-se?BGID=ProductA) |
-|United Kingdom     |waitlist availability  |[join the waitlist](https://www.microsoft.com/emwa/signup_2/en-gb?BGID=ProductA) |
-|Australia	        |coming soon	        |check back later        |
-|Austria	        |coming soon	        |check back later	     |
-|Hungary	        |coming soon	        |check back later	     |
-|Ireland	        |coming soon	        |check back later	     |
-|Japan	            |coming soon	        |check back later	     |
-|New Zealand	    |coming soon	        |check back later	     |
-|Portugal	        |coming soon	        |check back later	     |
-|Spain	            |coming soon	        |check back later	     |
-|Taiwan	            |coming soon	        |check back later	     |
+|United States      |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2155270) |
+|Canada             |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2155270) |
+|France             |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2155270) |
+|Germany            |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2155270) |
+|Netherlands        |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2155270) |
+|Sweden             |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2155270) |
+|United Kingdom     |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2155270) |
+|Australia	    |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2155270) |
+|Austria	    |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2155270) |
+|Hungary	    |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2155270) |
+|Ireland	    |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2155270) |
+|Japan	            |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2155270) |
+|New Zealand	    |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2155270) |
+|Portugal	    |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2155270) |
+|Spain	            |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2155270) |
+|Taiwan	            |available for order|[order now](https://robotkingdom.com.tw/product/azure-percept-dk/) |
 
 	
+Azure Percept Audio SoM can be purchased in the following countries:
+
+|Country            |Availability Status    |More Information        |
+|:------------------|:----------------------|:-----------------------|
+|United States      |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2169074) |
+|Canada             |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2169074) |
+|France             |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2169074) |
+|Germany            |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2169074) |
+|Netherlands        |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2169074) |
+|Sweden             |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2169074) |
+|United Kingdom     |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2169074) |
+|Australia	    |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2169074) |
+|Austria	    |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2169074) |
+|Hungary	    |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2169074) |
+|Ireland	    |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2169074) |
+|Japan	            |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2169074) |
+|New Zealand	    |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2169074) |
+|Portugal	    |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2169074) |
+|Spain	            |available for order|[order now](https://go.microsoft.com/fwlink/?linkid=2169074) |
+|Taiwan	            |available for order|[order now](https://robotkingdom.com.tw/product/azure-percept-audio/) |
